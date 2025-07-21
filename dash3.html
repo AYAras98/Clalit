@@ -1,41 +1,126 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>דשבורד אסטרטגי – כללית</title>
-  <style>
-    body {
-      direction: rtl;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #fff0f5, #e6e6ff);
-      padding: 30px;
-      text-align: center;
-    }
-    h1 {
-      color: #663399;
-    }
-    iframe {
-      width: 90%;
-      height: 800px;
-      border: none;
-      margin-top: 20px;
-    }
-    a {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת 3 – דשבורד אסטרטגי</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #333;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(135deg, #4a69bd, #1e3799);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            margin-bottom: 2rem;
+        }
+        .description h2 {
+            color: #4a69bd;
+            font-size: 1.8rem;
+        }
+        .tableau-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .back-btn {
+            background: linear-gradient(135deg, #4a69bd, #1e3799);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 1rem;
+        }
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #4a69bd;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <h1>מערכת 3 – דשבורד אסטרטגי: פילוח אוכלוסייה ותובנות רוחביות</h1>
-  <p>כולל פילוח לפי גיל, מין, מסלולי עמלות ומאפיינים דמוגרפיים</p>
-  <iframe src="https://public.tableau.com/views/final2_17529386678720/sheet6?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"></iframe>
-  <br>
-  <a href="index.html">חזרה לדף הראשי</a>
+    <header>
+        <h1>מערכת 3 – דשבורד אסטרטגי: פילוח אוכלוסייה ותובנות רוחביות</h1>
+    </header>
+    <div class="container">
+        <section class="description">
+            <h2>דשבורד אסטרטגי: פילוח אוכלוסייה ותובנות רוחביות</h2>
+            <p>דשבורד זה מספק תובנות אסטרטגיות באמצעות פילוח אוכלוסיית המטופלים וניתוח נתונים רוחביים. הוא מאפשר זיהוי מגמות, תכנון משאבים ושיפור קבלת החלטות ברמת הניהול הארגוני.</p>
+        </section>
+        <section class="tableau-container" id="tableau">
+            <h2>דשבורד אסטרטגי 📊</h2>
+            <p>צפו בויזואליזציה המרכזית שלנו למטה - נתוני פילוח ותובנות! 👇</p>
+            <div class='tableauPlaceholder' id='viz1753026250731' style='position: relative'>
+                <noscript><a href='#'><img alt='אסטרטגי' src='https://public.tableau.com/static/images/fi/final2_17529386678720/sheet6/1_rss.png' style='border: none' /></a></noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='final2_17529386678720/sheet6' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/fi/final2_17529386678720/sheet6/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1753026250731');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width='100%';
+                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width='100%';
+                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                } else {
+                    vizElement.style.width='100%';
+                    vizElement.style.height='827px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </section>
+        <button class="back-btn" onclick="window.location.href='index.html'">חזור לדף הראשי</button>
+    </div>
+    <footer>
+        <p>© 2025 כללית - מערכת ניהול תורים וויזואליזציה</p>
+    </footer>
 </body>
 </html>
