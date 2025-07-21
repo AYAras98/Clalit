@@ -1,84 +1,109 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>המערכת של כללית</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #e0f7fa, #80deea);
-      color: #004d40;
-      direction: rtl;
-    }
-
-    header {
-      background: linear-gradient(to right, #00838f, #00acc1);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
-
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .buttons a {
-      text-decoration: none;
-      background: linear-gradient(to right, #4db6ac, #00796b);
-      color: white;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      font-size: 1.2rem;
-      transition: 0.3s;
-    }
-
-    .buttons a:hover {
-      background: linear-gradient(to right, #00796b, #004d40);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המערכת של כללית - דף ראשי</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #333;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(135deg, #4a69bd, #1e3799);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .goals {
+            margin: 2rem 0;
+        }
+        .goals h2 {
+            color: #4a69bd;
+            font-size: 1.8rem;
+        }
+        .goals ul {
+            list-style-type: disc;
+            padding-right: 2rem;
+        }
+        .goals li {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            background: linear-gradient(135deg, #4a69bd, #1e3799);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #4a69bd;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>המערכת של כללית</h1>
-    <h2>מערכת ויזואליזציה רלוונטית לקבלת החלטות בניהול שירותי הבריאות</h2>
-  </header>
-
-  <main>
-    <section>
-      <p>
-        המערכת מאפשרת ניהול תורים ושירות פרונטלי בסניפי המרפאות. הצוות יכול לקבוע תורים, לשנות, לבטל,
-        לבדוק היסטוריית הגעה, לסדר יומנים לפי טיפולים או בקשות, לשלוח SMS תזכורת, ולעדכן פרטי מטופלים.
-        המטרה: למנוע עומס, לארגן את הקבלה ולשפר את חוויית המטופל.
-      </p>
-    </section>
-
-    <div class="buttons">
-      <a href="dash1.html">מערכת 1 – דשבורד תפעולי: ניהול תורים ושירות לקוחות</a>
-      <a href="dash2.html">מערכת 2 – דשבורד ניהולי: ניתוח עומסים, ביטולים ותזכורות</a>
-      <a href="dash3.html">מערכת 3 – דשבורד אסטרטגי: פילוח אוכלוסייה ותובנות רוחביות</a>
+    <header>
+        <h1>המערכת של כללית – מערכת ויזואליזציה רלוונטית לקבלת החלטות בניהול שירותי הבריאות</h1>
+    </header>
+    <div class="container">
+        <section class="goals">
+            <h2>מטרות המערכת</h2>
+            <ul>
+                <li>ניהול תורים ושירות פרונטלי בסניפי המרפאות</li>
+                <li>קביעת תורים, שינוי או ביטול בלחיצת כפתור</li>
+                <li>צפייה בהיסטוריית הגעה / ביטולים של מטופלים</li>
+                <li>סידור יומני רופאים לפי שעות, סוגי טיפולים, חופשות ובקשות מיוחדות</li>
+                <li>שליחת SMS תזכורת למטופלים</li>
+                <li>רישום לקוחות חדשים או עדכון פרטים קיימים</li>
+                <li>זיהוי עומסים וייעול תפקוד צוות הקבלה</li>
+            </ul>
+            <p>המערכת מספקת לצוות הקבלה ממשק פשוט שמסייע לנהל את היום־יום בקלות: לדוגמה, אם רופא מבקש להזיז תור – ניתן לגרור את התור, לעדכן את השעה ולהודיע למטופל תוך שניות. המערכת עצמה לא עוסקת באבחון רפואי – אלא בסידור התורים, כדי שלא יהיה בלגן בקבלה.</p>
+        </section>
+        <section class="buttons">
+            <button class="btn" onclick="window.location.href='dash1.html'">מערכת 1 – דשבורד תפעולי: ניהול תורים ושירות לקוחות</button>
+            <button class="btn" onclick="window.location.href='dash2.html'">מערכת 2 – דשבורד ניהולי: ניתוח עומסים, ביטולים ותזכורות</button>
+            <button class="btn" onclick="window.location.href='dash3.html'">מערכת 3 – דשבורד אסטרטגי: פילוח אוכלוסייה ותובנות רוחביות</button>
+        </section>
     </div>
-  </main>
+    <footer>
+        <p>© 2025 כללית - מערכת ניהול תורים וויזואליזציה</p>
+    </footer>
 </body>
 </html>
